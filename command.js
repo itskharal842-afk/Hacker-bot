@@ -1,0 +1,21 @@
+var commands = [];
+
+function cmd(info, func) {
+    var data = info;
+    data.function = func;
+    if (!data.dontAddCommandList) data.dontAddCommandList = false;
+    if (!info.desc) info.desc = '';
+    if (!data.fromMe) data.fromMe = false;
+    if (!info.category) data.category = 'misc';
+    if(!info.filename) data.filename = "Not Provided";
+    commands.push(data);
+    return data;
+}
+module.exports = {
+    cmd,
+    AddCommand:cmd,
+    Function:cmd,
+    Module:cmd,
+    commands,
+};
+ᴹʳ᭄SUFYAN࿐X࿐HACKER/ ├── main.js                      # Core Application Entry & Lifecycle Orchestrator ├── handler.js                   # Central Message Routing, Access Guard & Dispatcher ├── setting.js                   # Global Configurations, Credentials & API Endpoints ├── package.json                 # Dependency Manifest & Scripts ├── database/ │   └── database.sqlite          # Persistent SQLite Database File (sql.js) ├── lib/ │   ├── database.js              # SQLite Database API & Schema Migrator │   ├── serializer.js            # Inbound Message Sanitizer & Context Extender │   ├── plugins.js               # Dynamic Plugin Registry & Hot-Reload Watcher │   ├── message.js               # Custom Socket Helper Bindings │   ├── logger.js                # Formatted Telemetry & Event Logger │   ├── canvas.js                # SVG & Graphic Rendering Pipeline │   ├── exif.js                  # Sticker Metadata & WebP VP8X Muxer │   └── utils.js                 # Permission Evaluators, Formatters & JID Resolvers ├── scrape/ │   ├── google.js                # Google Search & News RSS Engine │   ├── hok.js                   # Honor of Kings MediaWiki REST Parser │   └── ephoto.js                # Ephoto Text Generator Utility └── plugins/                     # 269+ Modular Command Handlers (526 Commands)     ├── main/                    # Base Commands (Menu, System Telemetry, Runtime)     ├── owner/                   # Administration, Hot-Toggle, Backup, Update     ├── premium/                 # Subscription-Restricted Utilities     ├── github/                  # Complete GitHub Suite (Clone, Push, Stalk, Repos)     ├── downloader/              # Multi-Platform Media Downloaders     ├── search/                  # Information Retrieval & Media Search     ├── convert/                 # Audio/Video/Sticker Transcoders & MultiScript     ├── maker/                   # Brat & Canvas Graphic Generators     ├── ai/                      # Conversational AI Agents     ├── ai-image/                # Neural Style & Image Transformations     ├── audio/                   # Modular 21-in-1 Audio DSP Effects     ├── group/                   # Group Governance, Welcome & Goodbye Automation     ├── islamic/                 # Schedules, Surah & Islamic Knowledge     ├── stalker/                 # Social Media Intelligence Tools     ├── tools/                   # Utilities, Media Retrieval, URL Shorteners     ├── asupan

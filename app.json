@@ -1,0 +1,27 @@
+{
+  "name": "ᴹʳ᭄SUFYAN࿐X࿐HACKER",
+  "description": "Javascript WhatsApp bot made by ᴹʳ᭄SUFYAN࿐X࿐HACKER",
+  "logo": "https://files.catbox.moe/kvjcgy.jpg",
+  "keywords": ["ᴹʳ᭄SUFYAN࿐X࿐HACKER"],
+  "success_url": "/",
+  "stack": "container",
+
+  "env": {
+    "MONGODB_URL": {
+      "description": "MongoDB connection string for database storage",
+      "required": false
+    },
+    "DB_NAME": {
+      "description": "Database name for MongoDB (default: raza-smd)",
+      "required": ture,
+      "value": "adeel-md"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
