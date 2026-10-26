@@ -8,7 +8,8 @@
     "start:pm2": "pm2 start index.js --node-args='--expose-gc' --deep-monitoring --name raza-smd",
     "stop": "pm2 stop ᴹʳ᭄SUFYAN࿐X࿐HACKER-smd",
     "restart": "pm2 restart ᴹʳ᭄SUFYAN࿐X࿐HACKER-smd",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "mini": "node mini-bot.js"
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
